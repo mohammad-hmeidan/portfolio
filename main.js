@@ -62,7 +62,7 @@ const data = [
     title: "CRUDS Project",
     description:
       "There are Create, Read, Update, Delete and Search data in this project",
-    imageURL: "images/cruds.webp",
+    imageURL: "images/cruds-project.webp",
     tools: [
       { name: "html", icon: "fa-brands fa-html5" },
       { name: "css", icon: "fa-brands fa-css3-alt" },
