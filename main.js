@@ -44,13 +44,25 @@ btn.onclick = function () {
 // data
 const data = [
   {
+    id: 11,
+    title: "CRUD React + Ts Project",
+    description:
+      "This project displays movies, TV shows, and actors so that you can search ...",
+    imageURL: "images/crud-react+ts.webp",
+    tools: [
+      { name: "tailwind", image: "images/tailwind.png" },
+      { name: "ts", image: "images/typescript.png" },
+      { name: "react", icon: "fa-brands fa-react react" },
+    ],
+    link: "https://mohammad-hmeidan.github.io/crud-react-ts/",
+  },
+  {
     id: 0,
     title: "Movie Project",
     description:
       "This project displays movies, TV shows, and actors so that you can search ...",
     imageURL: "images/movie-project.webp",
     tools: [
-      { name: "html", icon: "fa-brands fa-html5" },
       { name: "css", icon: "fa-brands fa-css3-alt" },
       { name: "js", icon: "fa-brands fa-js js" },
       { name: "react", icon: "fa-brands fa-react react" },
@@ -144,7 +156,7 @@ const data = [
       { name: "css", icon: "fa-brands fa-css3-alt" },
       { name: "js", icon: "fa-brands fa-js js" },
     ],
-    link: "https://mohammad-hmeidan.github.io/Dashboard/",
+    link: "https://mohammad-hmeidan.github.io/Calculator/",
   },
   {
     id: 9,
@@ -176,6 +188,9 @@ data.map((el) => {
   let div = document.createElement("div");
   let tools = `${el.tools
     .map((e) => {
+      if (e.image) {
+        return `<img src="${e.image}" alt="TypeScript" width="18px" height="24px"/>`;
+      }
       return `<i class="${e.icon} ${e.name}"></i>`;
     })
     .join("")}`;
